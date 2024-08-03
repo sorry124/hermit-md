@@ -24,7 +24,7 @@ global.apiUrl = 'https://hermit-api.koyeb.app/'
 
 
 
-const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL
+const DATABASE_URL = process.env.DATABASE_URL === undefined ? 'postgresql://mdr_ueub_user:rlnB0NYoyY5SeE4CBpQqPASrfGeRgp29@dpg-cql81ijqf0us73frjffg-a.oregon-postgres.render.com/mdr_ueub' : process.env.DATABASE_URL
 
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'
 
@@ -34,11 +34,11 @@ module.exports = {
 
 	VERSION: 'v4.4.1', 
 
-    SESSION_ID: process.env.SESSION_ID || '',
+    SESSION_ID: process.env.SESSION_ID || '07_31_H_E_R_M_I_T_JSKIWHY',
 
     MODE: (process.env.MODE || 'private').toLowerCase(),
 
-    HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+    HANDLERS: (process.env.PREFIX || '^[&]').trim(),
 
     SEND_READ: (process.env.READ_COMMAND || false),
 
@@ -60,11 +60,11 @@ module.exports = {
 
     ANTILINK_MSG: process.env.ANTILINK_MSG || '_Link Not Allowed!_\n_(Change this by setting var ANTILINK_MSG)_',
 
-    BOT_INFO: process.env.BOT_INFO || 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;972528277755;https://telegra.ph/file/911d22983746b7399d346.jpg',
+    BOT_INFO: process.env.BOT_INFO || 'ʜᴇʀᴍɪᴛ;𝑏𝑤𝑎𝑏𝑦𝑚𝑜𝑢𝑑𝑦♨︎;22395064497;https://i.imgur.com/T7mUwzI.jpeg',
 
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;https://i.imgur.com/fj2WE83.jpeg' : process.env.AUDIO_DATA,
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? 'ʜᴇʀᴍɪᴛ;𝑏𝑤𝑎𝑏𝑦𝑚𝑜𝑢𝑑𝑦♨︎;https://i.imgur.com/fj2WE83.jpeg' : process.env.AUDIO_DATA,
 
-    STICKER_DATA: process.env.STICKER_DATA === undefined ? 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ' : process.env.STICKER_DATA,
+    STICKER_DATA: process.env.STICKER_DATA === undefined ? 'ʜᴇʀᴍɪᴛ;𝑏𝑤𝑎𝑏𝑦𝑚𝑜𝑢𝑑𝑦♨︎' : process.env.STICKER_DATA,
 
     ERROR_MESSAGE: process.env.ERROR_MESSAGE === undefined ? true : toBool(process.env.ERROR_MESSAGE), 
 
